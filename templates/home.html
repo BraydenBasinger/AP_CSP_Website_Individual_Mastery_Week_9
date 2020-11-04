@@ -5,14 +5,17 @@
  <head>
     <title>Home</title>
  </head>
+ <body>
+ <div>
+  <p>This website is to show Mr. Mortensen about my learnings. This is for {{ project }}</p>
+ </div>
+ </body>
 
- <p>This website is to show Mr. Mortensen about my learnings. This is for {{project}}</p>
 
  <body>
- 
  <style>
       body{ 
-        background-image: url('cool-backgrond.jpg'); 
+        background-image: url('cool-background.jpg');
         background-repeat: no-repeat;
         animation: bg-animation 10s infinite;
 
@@ -24,16 +27,16 @@
 
         @keyframes bg-animation {
             0% {
-                background-color: #f57e42;
+                background-color: #33E3FF;
             }
             25% {
-                background-color: #1f5d9c;
+                background-color: #FF33EC;
             }
             50% {
-                background-color: #781416;
+                background-color: #CB7173;
             }
             75% {
-                background-color: #60d66c;
+                background-color: #36E771;
             }
             100% {
                 background-color: #EC9F20;
@@ -43,13 +46,22 @@
 
   </style>
 
- <h2>This is my home page</h2>
+  <h2>Home Page</h2>
 
- <a style="font-size:15px"href="https://github.com/BraydenBasinger" class="btn">My GitHub</a>
- <a 
+  <a style="font-size:15px"href="https://github.com/BraydenBasinger" class="btn">My GitHub</a>
 
- </body>
+  </body>
 
+  <body>
+
+  <div>
+   <a style="font-size:30px"href="/bio" class="btn">About Me</a>
+  </div>
+  <div>
+   <a style="font-size:30px"href="/main" class="btn">Main Page</a>
+  </div>
+
+  </body>
 
 
 </html>
