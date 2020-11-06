@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>This Is The Main Page</title>
+    <title>Main</title>
 </head>
+<body>
+<h2>Stocks</h2>
+<h5gv> This is where all my stocks are</h5gv >
+{% for stock in stocks %}
+
+<h2><mark>{{ stock.name }}</mark></h2>
+<h3>{{ stock.price }}</h3>
+<h3>{{ stock.divyield }}%</h3>
+
+{% endfor %}
+
+    <div class="row" style="padding-left: 0%;">
+        <div class="col-5">
+            <img src="{{ url_for('static', filename='qstock.PNG') }}" width="750" height="500">
+
+
+
+</body>
 
 
 </html>

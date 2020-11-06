@@ -9,12 +9,25 @@ def home():
 
 @app.route('/main')
 def main():
-  return render_template("main.html")
+    stocks = [
+        {
+            "name":"Qualcomm",
+            "price":145.01,
+            "divyield":1.79
+        },
+
+        {
+            "name":"Nvidia",
+            "price":582.48,
+            "divyield":.11
+        },
+     ]
+    return render_template("main.html", stocks=stocks)
 
 @app.route('/bio')
 def bio():
-    embed = "https://repl.it/@BraydenBasinger"
+  embed = "https://repl.it/@BraydenBasinger"
   return render_template("bio.html", age=True)
 
 if __name__ == "__main__":
-    app.run(debug=True, port='3000', host='0.0.0.0')
+    app.run(debug=True, port='5000', host='127.0.0.1')

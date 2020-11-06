@@ -3,20 +3,30 @@
 <head>
     <title>Bio</title>
 </head>
+
 <body>
 
 <h2>About Me</h2>
 
-     <iframe class="embed-responsive-item" src="{{embed}} </iframe>
+<iframe height="400px" width="100%" src="https://repl.it/@BraydenBasinger/Flask-Web-Series-Coder-Joes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<div class="row" style="padding-left: 10%;">
+    <div class="col-4">
+        <img src="{{ url_for('static', filename='ArchofBridge.jpg') }}" width="350" height="350">
 
-<p> I am <mark>Brayden Basinger</mark> and this is my website.</p>
-<p> I am using IntelliJ instead of <del>Repl.it</del> because this is a better IDE</p>
-<p> I am in <b>Mr. Mortensens</b> period 4 AP CSP class</p>
-{% if age %}
-<p> I am 17 years old</p>
-{% else %}
-<p> I am not 17 years old</p>
-{% endif %}
+        <div><p> I am <mark>Brayden Basinger</mark> and this is my website.</p>
+            <p> I am using IntelliJ instead of <del>Repl.it</del> because this is a better IDE</p>
+            <p> I am in <b>Mr. Mortensens</b> period 4 AP CSP class</p>
+            {% if age %}
+            <p> I am 17 years old</p>
+            {% else %}
+            <p> I am not 17 years old</p>
+            {% endif %}
+        </div>
+
 
 </body>
+
+
+
+
 </html>
